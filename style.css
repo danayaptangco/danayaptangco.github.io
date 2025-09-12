@@ -109,6 +109,7 @@ nav .nav-right a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  column-gap: 4rem; /* use column gap instead of padding on the right column so left heading centers correctly */
 }
 
 #about h2 {
@@ -128,7 +129,7 @@ nav .nav-right a:hover {
 
 .about-text {
   grid-column: 2 / 3;
-  padding-left: 4rem;
+  padding-left: 0; /* spacing provided by column-gap on .about-container */
   max-width: 100%;
   text-align: left;
 }
