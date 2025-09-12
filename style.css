@@ -205,6 +205,15 @@ footer p:last-child {
   overflow: hidden;
 }
 
+/* Left-side mirrored hero variant */
+.research-hero-alt {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
 .research-hero-background {
   position: absolute;
   top: 0;
@@ -239,6 +248,20 @@ footer p:last-child {
   display: flex;
   align-items: center; /* center vertically */
   padding: 0 60px; /* space from right edge */
+  box-sizing: border-box;
+}
+
+/* Content for left-side hero: place on left half */
+.research-hero-alt-content {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
   box-sizing: border-box;
 }
 
@@ -391,6 +414,15 @@ footer p:last-child {
     position: relative; /* stack under normal flow on mobile */
     width: 100%;
     right: auto;
+    top: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .research-hero-alt-content {
+    position: relative;
+    width: 100%;
+    left: auto;
     top: auto;
     padding: 0 20px;
     box-sizing: border-box;
