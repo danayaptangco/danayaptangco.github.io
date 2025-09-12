@@ -79,12 +79,9 @@ nav .nav-right a:hover {
 /* About Section */
 #about {
   padding: 4rem 2rem;
-  background: 
-    linear-gradient(135deg, rgba(168, 230, 207, 0.85) 0%, rgba(136, 216, 192, 0.85) 25%, rgba(112, 193, 179, 0.85) 50%, rgba(184, 134, 11, 0.85) 75%, rgba(218, 165, 32, 0.85) 100%),
-    url('../images/telescope-observation-night.jpg');
+  background: url('../images/telescope-observation-night.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   color: white;
   position: relative;
   min-height: 50vh;
