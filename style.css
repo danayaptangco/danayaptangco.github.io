@@ -558,9 +558,9 @@ footer p:last-child {
 }
 
 .service-title {
-  font-size: 5rem;
+  font-size: 4rem; /* slightly smaller */
   font-weight: 300;
-  text-align: right;
+  text-align: left; /* heading on the left now */
   margin: 0;
   color: #222;
 }
