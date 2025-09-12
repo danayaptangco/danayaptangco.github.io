@@ -41,7 +41,7 @@ nav .nav-right a:hover {
 .header {
   background: white;
   padding: 5rem 2rem 4rem 2rem;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +95,7 @@ nav .nav-right a:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 60px 100%, 0 calc(100% - 60px));
@@ -199,7 +199,7 @@ footer p:last-child {
 
 .research-hero {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -208,7 +208,7 @@ footer p:last-child {
 /* Left-side mirrored hero variant */
 .research-hero-alt {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -363,7 +363,7 @@ footer p:last-child {
   .header {
     flex-direction: column;
     padding: 3rem 1rem 2rem 1rem;
-    min-height: 50vh;
+    min-height: 40vh;
     text-align: center;
   }
   
@@ -475,7 +475,7 @@ footer p:last-child {
   
   .research-hero {
     height: auto;
-    min-height: 50vh;
+    min-height: 40vh;
     padding: 40px 0;
   }
   
