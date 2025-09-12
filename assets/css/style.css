@@ -50,8 +50,8 @@ nav .nav-right a:hover {
 }
 
 .profile-image {
-  width: 350px;
-  height: 280px;
+  width: 280px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #f0f0f0;
@@ -194,8 +194,8 @@ footer p:last-child {
   }
   
   .profile-image {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
     margin-right: 0;
     margin-bottom: 2rem;
   }
