@@ -190,7 +190,7 @@ footer p:last-child {
 
 .research-title-section h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   color: #2c3e50;
   margin: 0;
@@ -240,14 +240,17 @@ footer p:last-child {
 
 .research-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  padding-right: 60px;
 }
 
 .research-description {
   flex: 1;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .research-description p {
@@ -267,10 +270,11 @@ footer p:last-child {
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  flex-shrink: 0;
 }
 
 .advisor-section {
-  text-align: center;
+  text-align: left;
 }
 
 .advisor-label,
@@ -441,12 +445,20 @@ footer p:last-child {
   .research-info {
     flex-direction: column;
     gap: 30px;
+    justify-content: center;
+    margin-left: 0;
+    padding-right: 0;
+    max-width: none;
   }
   
   .advisor-info {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+  
+  .advisor-section {
+    text-align: center;
   }
   
   .position-section {
