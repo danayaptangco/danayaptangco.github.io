@@ -44,7 +44,8 @@ nav .nav-right a:hover {
   min-height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -56,14 +57,16 @@ nav .nav-right a:hover {
   object-fit: cover;
   border: 5px solid #f0f0f0;
   box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-  margin-right: 6rem;
+  margin-right: 4rem;
   flex-shrink: 0;
 }
 
 .header-text {
   flex: 1;
   text-align: left;
-  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header h1 {
