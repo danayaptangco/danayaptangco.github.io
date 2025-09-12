@@ -113,7 +113,7 @@ nav .nav-right a:hover {
 }
 
 #about h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 300;
   color: #333;
   margin: 0;
@@ -342,12 +342,7 @@ footer p:last-child {
 .advisor-image img {
   width: 100%;
   height: 100%;
-  /* Use contain so portrait subjects aren't zoomed/cropped; center them */
-  object-fit: contain;
-  object-position: center;
-  background: #f7f7f7; /* neutral backdrop when image aspect doesn't fill circle */
-  padding: 6px; /* small inner padding so face isn't flush to edge */
-  box-sizing: border-box;
+  object-fit: cover;
 }
 
 .position-section {
