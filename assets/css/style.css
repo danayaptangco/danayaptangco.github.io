@@ -37,7 +37,6 @@ nav .nav-right a:hover {
   color: #0077b5;
 }
 
-/* Hero Section */
 /* Header Section */
 .header {
   background: white;
@@ -75,49 +74,6 @@ nav .nav-right a:hover {
   margin-bottom: 2rem;
   font-weight: 300;
   letter-spacing: 0.5px;
-}
-
-.hero-section {
-  padding: 4rem 2rem;
-  background: #ffffff;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.hero-content .profile-pic {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-text h1 {
-  font-size: 3.5rem;
-  margin: 0 0 1rem 0;
-  color: #333;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-.hero-text p {
-  font-size: 1.5rem;
-  color: #666;
-  margin: 0;
-  font-weight: 400;
 }
 
 /* About Section */
@@ -166,82 +122,6 @@ nav .nav-right a:hover {
   margin-bottom: 0;
 }
 
-/* Research Highlight Section */
-.research-highlight {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-.research-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-.research-text {
-  flex: 1;
-}
-
-.research-text h2 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-.research-text p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 3rem;
-}
-
-.advisor-info {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-}
-
-.advisor-details {
-  flex: 1;
-}
-
-.advisor-details p {
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.advisor-details p:last-child {
-  margin-bottom: 0;
-}
-
-.advisor-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-}
-
-.research-image-container {
-  flex: 1;
-  text-align: center;
-}
-
-.research-hero-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -279,205 +159,7 @@ footer p:last-child {
   margin-top: 1rem;
 }
 
-/* Page-specific styles */
-.page-header {
-  text-align: center;
-  padding: 3rem 2rem;
-  background: #f8f9fa;
-  border-bottom: 1px solid #eee;
-}
 
-.page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-  font-weight: 300;
-}
-
-.page-header p {
-  font-size: 1.2rem;
-  color: #666;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.page-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* Research page styles */
-.research-section {
-  margin-bottom: 4rem;
-}
-
-.research-grid {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.research-item {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.research-image {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.research-content h3 {
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.research-tags {
-  margin-top: 1rem;
-}
-
-.tag {
-  display: inline-block;
-  background: #0077b5;
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.tool-category {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* CV page styles */
-.cv-download {
-  margin-top: 1rem;
-}
-
-.download-btn {
-  display: inline-block;
-  background: #0077b5;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.download-btn:hover {
-  background: #005885;
-}
-
-.cv-content {
-  max-width: 900px;
-}
-
-.cv-section {
-  margin-bottom: 3rem;
-}
-
-.cv-section h2 {
-  color: #333;
-  border-bottom: 2px solid #0077b5;
-  padding-bottom: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.cv-entries {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.cv-entry {
-  display: flex;
-  gap: 2rem;
-}
-
-.cv-date {
-  font-weight: bold;
-  color: #0077b5;
-  min-width: 120px;
-  flex-shrink: 0;
-}
-
-.cv-details h3 {
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.institution {
-  color: #666;
-  font-style: italic;
-  margin-bottom: 0.5rem;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.skill-category {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.skill-category h3 {
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skill-category li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
-}
-
-/* Other page styles */
-.mentorship-section, .media-section, .fulbright-section {
-  margin-bottom: 4rem;
-}
-
-.highlight-item, .advantage-item, .approach-item {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
-}
-
-.highlight-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -495,26 +177,21 @@ footer p:last-child {
     font-size: 0.9rem;
   }
   
-  .hero-section {
-    padding: 2rem 1rem;
+  .header {
+    padding: 3rem 1rem 2rem 1rem;
+    min-height: 50vh;
   }
   
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-  
-  .hero-content .profile-pic {
+  .profile-image {
     width: 200px;
     height: 200px;
   }
   
-  .hero-text h1 {
+  .header h1 {
     font-size: 2.5rem;
   }
   
-  .hero-text p {
+  .header .subtitle {
     font-size: 1.2rem;
   }
   
@@ -528,57 +205,6 @@ footer p:last-child {
   }
   
   #about p {
-    text-align: left;
     font-size: 1rem;
-  }
-
-  .research-highlight {
-    padding: 2rem 1rem;
-  }
-
-  .research-content {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .research-text h2 {
-    font-size: 2rem;
-  }
-
-  .research-text p {
-    font-size: 1rem;
-  }
-
-  .advisor-info {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .advisor-photo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .research-item {
-    flex-direction: column;
-  }
-
-  .research-image {
-    width: 100%;
-    height: 200px;
-  }
-
-  .cv-entry {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .cv-date {
-    min-width: auto;
-  }
-
-  .page-content {
-    padding: 1rem;
   }
 }
