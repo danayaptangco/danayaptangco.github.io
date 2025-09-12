@@ -532,3 +532,103 @@ footer p:last-child {
     font-size: 1rem;
   }
 }
+
+/* Service / Mentorship Page Styles */
+.service-hero {
+  background: #fafafa;
+  padding: 4rem 0;
+}
+
+.service-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 0 2rem;
+}
+
+.service-copy p {
+  max-width: 600px;
+  color: #222;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 1rem 0;
+}
+
+.service-title {
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: right;
+  margin: 0;
+  color: #222;
+}
+
+.mentor-grid-section {
+  background: #fafafa;
+  padding: 4rem 0 6rem 0;
+}
+
+.mentor-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 0 2rem;
+}
+
+.mentor-card {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  border-radius: 4px;
+}
+
+.mentor-photo {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.25rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mentor-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mentor-card h3 {
+  margin: 0;
+  font-weight: 500;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .service-hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .service-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .mentor-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentor-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .service-title {
+    font-size: 2.2rem;
+  }
+}
