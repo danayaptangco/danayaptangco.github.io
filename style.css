@@ -249,8 +249,8 @@ footer p:last-child {
 }
 
 .research-description {
-  flex: 1;
-  max-width: 400px;
+  width: 100%;
+  text-align: center;
 }
 
 .research-description p {
