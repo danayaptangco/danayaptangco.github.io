@@ -536,7 +536,7 @@ footer p:last-child {
 /* Service / Mentorship Page Styles */
 .service-hero {
   background: #fafafa;
-  padding: 4rem 0;
+  padding: 3rem 0 2rem 0; /* reduced bottom padding to pull up cards */
 }
 
 .service-hero-inner {
@@ -567,7 +567,7 @@ footer p:last-child {
 
 .mentor-grid-section {
   background: #fafafa;
-  padding: 4rem 0 6rem 0;
+  padding: 2rem 0 4rem 0; /* reduced top padding for tighter spacing */
 }
 
 .mentor-grid-container {
