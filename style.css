@@ -121,7 +121,9 @@ nav .nav-right a:hover {
   grid-column: 1 / 2;
   justify-self: center;
   align-self: center;
+  place-self: center; /* center both horizontally and vertically in the left grid cell */
   text-align: center;
+  width: 100%;
 }
 
 .about-text {
