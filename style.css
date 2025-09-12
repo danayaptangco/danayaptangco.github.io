@@ -597,6 +597,10 @@ footer p:last-child {
   margin: 0 0 1rem 0; /* match .service-copy spacing so shorter copy still takes similar vertical space */
 }
 
+.teaching-copy {
+  padding: 2rem 0; /* vertical padding only: top & bottom */
+}
+
 .teaching-title {
   font-size: 4rem;
   font-weight: 300;
@@ -638,6 +642,10 @@ footer p:last-child {
 
   .teaching-gallery {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .teaching-copy {
+    padding: 1rem 0; /* reduced vertical padding on narrow screens */
   }
 }
 
