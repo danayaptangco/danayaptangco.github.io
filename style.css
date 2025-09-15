@@ -738,7 +738,8 @@ footer p:last-child {
 
 @media (max-width: 900px) {
   .teaching-inner {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 0 2rem;
     gap: 2rem;
@@ -748,11 +749,7 @@ footer p:last-child {
     text-align: center;
     font-size: 2.5rem;
     line-height: 1.2;
-  }
-
-  .teaching-gallery {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    order: -1; /* Move heading above the copy on mobile */
   }
 
   .teaching-copy {
@@ -760,6 +757,12 @@ footer p:last-child {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+    order: 0; /* Keep copy below heading on mobile */
+  }
+
+  .teaching-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
 
