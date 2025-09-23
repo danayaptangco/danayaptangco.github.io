@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danayaptangco.github.io/sitemap.xml
