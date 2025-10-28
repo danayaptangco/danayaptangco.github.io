@@ -840,12 +840,12 @@ footer p:last-child {
 }
 
 .mentor-grid-container {
-  max-width: 1200px;
+  max-width: 95%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .mentor-card {
