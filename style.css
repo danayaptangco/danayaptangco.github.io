@@ -1023,7 +1023,7 @@ footer p:last-child {
 .timeline-content img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   max-height: 500px;
 }
@@ -1037,7 +1037,7 @@ footer p:last-child {
 .timeline-images-grid img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   max-height: 400px;
 }
 
