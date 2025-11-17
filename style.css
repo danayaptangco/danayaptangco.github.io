@@ -1130,3 +1130,79 @@ footer p:last-child {
     height: 250px;
   }
 }
+
+/* Acknowledgements Section */
+.acknowledgements-section {
+  background: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.acknowledgements-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.acknowledgements-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.acknowledgements-intro {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.acknowledgements-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.acknowledgements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.acknowledgements-list li {
+  margin: 0.5rem 0;
+}
+
+.acknowledgements-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.acknowledgements-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .acknowledgements-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .acknowledgements-images {
+    grid-template-columns: 1fr;
+  }
+  
+  .acknowledgements-container h2 {
+    font-size: 2rem;
+  }
+}
