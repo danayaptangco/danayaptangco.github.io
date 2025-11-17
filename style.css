@@ -1187,9 +1187,7 @@ footer p:last-child {
   display: flex;
   gap: 0; /* no gaps between images */
   margin-top: 0.5rem;
-  justify-content: center;
   align-items: stretch;
-  overflow: hidden;
 }
 
 .acknowledgements-images img {
@@ -1198,16 +1196,18 @@ footer p:last-child {
   display: block;
   border-radius: 0; /* flush edges */
   box-shadow: none;
+  flex: 1 1 0;    /* allow images to shrink/grow */
+  max-width: 25%; /* ensure four images fit across the container */
 }
 
-/* Responsive: stack images on small screens to avoid horizontal overflow */
+/* Responsive: wrap images on small screens into two per row */
 @media (max-width: 768px) {
   .acknowledgements-images {
     flex-wrap: wrap;
   }
   .acknowledgements-images img {
     height: 180px;
-    width: auto;
+    max-width: 50%;
   }
 }
 
