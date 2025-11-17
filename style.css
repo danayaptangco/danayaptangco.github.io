@@ -1022,21 +1022,23 @@ footer p:last-child {
 
 .timeline-content img {
   width: 100%;
-  height: 400px;
+  height: auto;
   object-fit: cover;
   display: block;
+  max-height: 500px;
 }
 
 .timeline-images-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
 }
 
 .timeline-images-grid img {
   width: 100%;
-  height: 300px;
+  height: auto;
   object-fit: cover;
+  max-height: 400px;
 }
 
 .timeline-text {
@@ -1081,11 +1083,13 @@ footer p:last-child {
   }
 
   .timeline-content img {
-    height: 300px;
+    height: auto;
+    max-height: 400px;
   }
 
   .timeline-images-grid img {
-    height: 200px;
+    height: auto;
+    max-height: 300px;
   }
 
   .timeline-text {
