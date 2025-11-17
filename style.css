@@ -1188,26 +1188,31 @@ footer p:last-child {
   gap: 0; /* no gaps between images */
   margin-top: 0.5rem;
   align-items: stretch;
+  justify-content: center;
+  max-width: 100%;
+  overflow-x: auto; /* allow horizontal scroll if images exceed container */
 }
 
 .acknowledgements-images img {
-  height: 300px; /* uniform vertical size */
+  height: 280px; /* uniform vertical size, slightly reduced to fit better */
   width: auto;   /* preserve aspect ratio, no cropping */
   display: block;
   border-radius: 0; /* flush edges */
   box-shadow: none;
-  flex: 1 1 0;    /* allow images to shrink/grow */
-  max-width: 25%; /* ensure four images fit across the container */
+  flex-shrink: 0; /* prevent squishing */
 }
 
 /* Responsive: wrap images on small screens into two per row */
 @media (max-width: 768px) {
   .acknowledgements-images {
     flex-wrap: wrap;
+    overflow-x: visible;
   }
   .acknowledgements-images img {
     height: 180px;
+    flex: 1 1 50%;
     max-width: 50%;
+    object-fit: cover; /* on small screens allow some crop to avoid giant gaps */
   }
 }
 
