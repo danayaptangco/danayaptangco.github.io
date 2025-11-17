@@ -1143,7 +1143,7 @@ footer p:last-child {
 }
 
 .acknowledgements-container {
-  max-width: 1000px;
+  max-width: 100%; /* allow full width instead of limiting to 1000px */
   margin: 0 auto;
   padding: 0 2rem;
   text-align: center;
@@ -1190,7 +1190,7 @@ footer p:last-child {
   align-items: stretch;
   justify-content: center;
   max-width: 100%;
-  overflow-x: auto; /* allow horizontal scroll if images exceed container */
+  overflow-x: visible; /* no scroll bar, let images take full natural width */
 }
 
 .acknowledgements-images img {
