@@ -1168,6 +1168,9 @@ footer p:last-child {
   margin-bottom: 2rem;
   color: #555;
   font-style: normal; /* match Por ultimo style */
+  max-width: 1000px; /* constrain text width */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .acknowledgements-list {
@@ -1185,7 +1188,7 @@ footer p:last-child {
 
 .acknowledgements-images {
   display: flex;
-  gap: 0; /* no gaps between images */
+  gap: 0.5rem; /* small space between images */
   margin-top: 0.5rem;
   align-items: stretch;
   justify-content: center;
