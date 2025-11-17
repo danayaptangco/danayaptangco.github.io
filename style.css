@@ -1040,8 +1040,8 @@ footer p:last-child {
 
 .timeline-images-grid img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   max-height: 400px;
 }
 
