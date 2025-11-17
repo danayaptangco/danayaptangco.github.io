@@ -962,7 +962,7 @@ footer p:last-child {
 
 .timeline-section {
   background: #fafafa;
-  padding: 4rem 0;
+  padding: 4rem 0 1.5rem; /* reduce bottom padding to pull next section closer */
 }
 
 .timeline-container {
@@ -987,6 +987,11 @@ footer p:last-child {
 .timeline-item {
   margin-bottom: 4rem;
   position: relative;
+}
+
+/* Reduce space after the last timeline item so acknowledgements sit closer */
+.timeline-container > .timeline-item:last-child {
+  margin-bottom: 1rem;
 }
 
 .timeline-date {
@@ -1133,8 +1138,8 @@ footer p:last-child {
 
 /* Acknowledgements Section */
 .acknowledgements-section {
-  background: #f9f9f9;
-  padding: 4rem 0;
+  background: #efefef; /* slightly darker for clearer separation */
+  padding: 2rem 0 3rem; /* pull section closer to timeline */
 }
 
 .acknowledgements-container {
@@ -1151,7 +1156,7 @@ footer p:last-child {
 }
 
 .acknowledgements-intro {
-  font-style: italic;
+  font-style: normal;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #555;
@@ -1186,7 +1191,9 @@ footer p:last-child {
 .acknowledgements-images img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain; /* show entire image without cropping */
+  object-position: center center;
+  background: #ffffff; /* letterbox background for contained images */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
