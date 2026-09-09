@@ -386,6 +386,39 @@ footer p:last-child {
   margin: 0 0 10px 0;
 }
 
+/* NSF-REU Summer Internships */
+.reu-section {
+  background: #fafafa;
+  padding: 60px 0 80px 0;
+}
+
+.reu-section h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #2c3e50;
+  margin: 0 0 50px 0;
+  line-height: 1.1;
+}
+
+.reu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .reu-section h1 { font-size: 2.5rem; }
+  .reu-grid { gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .reu-section { padding: 40px 0 60px 0; }
+  .reu-section h1 { font-size: 2rem; margin-bottom: 35px; }
+  .reu-grid { grid-template-columns: 1fr; gap: 45px; }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav {
