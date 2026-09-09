@@ -404,9 +404,22 @@ footer p:last-child {
 .reu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 120px;
   align-items: start;
 }
+
+/* Reserve three lines for each blurb, and put both blurbs in a shared grid
+   row so the advisor blocks stay level even when one wraps further. */
+.reu-section .research-description p {
+  min-height: calc(1.6em * 3);
+}
+
+.reu-grid { grid-template-rows: auto auto; row-gap: 30px; }
+.reu-section .research-info { display: contents; }
+.reu-grid > .research-info:nth-of-type(1) > .research-description { grid-column: 1; grid-row: 1; }
+.reu-grid > .research-info:nth-of-type(1) > .advisor-info { grid-column: 1; grid-row: 2; }
+.reu-grid > .research-info:nth-of-type(2) > .research-description { grid-column: 2; grid-row: 1; }
+.reu-grid > .research-info:nth-of-type(2) > .advisor-info { grid-column: 2; grid-row: 2; }
 
 /* The two internships always sit side by side, and each keeps its
    advisor / position columns, at every screen size. */
@@ -435,14 +448,14 @@ footer p:last-child {
 
 @media (max-width: 900px) {
   .reu-section h1 { font-size: 2.5rem; }
-  .reu-grid { gap: 40px; }
+  .reu-grid { gap: 70px; }
   .reu-section .advisor-info { gap: 20px; }
 }
 
 @media (max-width: 768px) {
   .reu-section { padding: 40px 0 60px 0; }
   .reu-section h1 { font-size: 2rem; margin-bottom: 30px; }
-  .reu-grid { gap: 24px; }
+  .reu-grid { gap: 40px; }
   .reu-section .research-info { gap: 20px; }
   .reu-section .research-description p { font-size: 0.95rem; }
   .reu-section .advisor-info { gap: 16px; }
@@ -457,7 +470,7 @@ footer p:last-child {
 
 @media (max-width: 480px) {
   .reu-section h1 { font-size: 1.6rem; }
-  .reu-grid { gap: 16px; }
+  .reu-grid { gap: 24px; }
   .research-container { padding: 0 20px; }
   .reu-section .research-description p { font-size: 0.85rem; line-height: 1.5; }
   .reu-section .advisor-info { flex-direction: column; gap: 12px; }
