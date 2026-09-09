@@ -37,8 +37,33 @@
     .cv-meta a:hover { color: #888; }
     .cv-frame { flex: 1 1 auto; min-height: 0; }
     .cv-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
-    @media (max-width: 768px) { .cv-meta { padding: 0.7rem 1.5rem; } }
-    @media (max-width: 480px) { .cv-meta { padding: 0.7rem 1rem; } }
+
+    /* Mobile browsers render only the first page of a PDF in an iframe,
+       so small screens get page images instead. Regenerate them whenever
+       the PDF changes:
+       pdftocairo -png -r 150 -scale-to-x 1240 -scale-to-y -1 "<cv>.pdf" page
+       cwebp -q 82 page-N.png -o assets/images/cv-page-N.webp */
+    .cv-pages { display: none; background: #f4f4f4; padding: 1rem; }
+    .cv-pages img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 1rem auto;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .cv-pages img:last-child { margin-bottom: 0; }
+
+    @media (max-width: 768px) {
+      .cv-meta { padding: 0.7rem 1.5rem; }
+      html, body { height: auto; }
+      .cv-frame { display: none; }
+      .cv-pages { display: block; }
+    }
+    @media (max-width: 480px) {
+      .cv-meta { padding: 0.7rem 1rem; }
+      .cv-pages { padding: 0.5rem; }
+    }
   </style>
 </head>
 <body>
@@ -63,5 +88,11 @@
   <div class="cv-frame">
     <iframe src="./assets/images/Dana%20Clarice%20Yaptangco%20CV.pdf" title="Dana Clarice Yaptangco CV"></iframe>
   </div>
+
+  <div class="cv-pages">
+    <img src="./assets/images/cv-page-1.webp" width="1240" height="1755" alt="CV page 1">
+    <img src="./assets/images/cv-page-2.webp" width="1240" height="1755" alt="CV page 2">
+  </div>
+
 </body>
 </html>
